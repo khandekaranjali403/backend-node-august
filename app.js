@@ -63,7 +63,7 @@ app.use('/review', review);
 
 
 module.exports = server
-const cors = require('cors');
+
 const corsOptions ={
     origin:'https://node-backend12345.onrender.com', 
     credentials:true,            //access-control-allow-credentials:true
