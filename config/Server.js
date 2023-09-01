@@ -5,8 +5,8 @@ const server = function (app) {
      });
 }
 
-module.exports = server
-const cors = require('cors');
+export default server
+import cors from 'cors';
 const corsOptions ={
     origin:'https://node-backend12345.onrender.com', 
     credentials:true,            //access-control-allow-credentials:true

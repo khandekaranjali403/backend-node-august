@@ -57,6 +57,29 @@ app.use('/about/offer', offer);
 app.use('/about/team', team);
 app.use('/review', review);
 
+
+
+
+
+
+module.exports = server
+const cors = require('cors');
+const corsOptions ={
+    origin:'https://node-backend12345.onrender.com', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
+
+
+
+
+
+
+
+
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
